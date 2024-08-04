@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;}
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend><h3>Enter the following</h3>  </legend>
+        <label>Name:</label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label>Age:</label>
+        <input type="number" id="age">
+        <br>
+        <br>
+        <label>City:</label>
+        <input type="text" id="city" >
+        <br>
+        <br>
+        <label>Country:</label>
+        <input type="text" id="country" onfocus="fillcountry();">
+        <br>
+        <br>
+        <input type="submit" value="Submit" onclick="submitform()">
+    </fieldset>
+    <br><br><br>
+    <p id="text">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandparagraph();"><em>Click for more.</em></a>
+    </p>
+    <button id="button" onclick="toggleContent()">Hide content</button>
+    <br><br>
+    <img src="https://cdn.goturkiye.com/istanbul-v2/bayakada-4.jpg" id="before" onMouseover="swapPic('before','https://cdn.goturkiye.com/istanbul-v2/bayakada-5.jpg');" height="500px" onmouseout="swapPic(id, 'https://cdn.goturkiye.com/istanbul-v2/bayakada-4.jpg')">
+    <script src="app.js"></script>
+</body>
+</html>
